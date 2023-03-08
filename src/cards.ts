@@ -14,14 +14,32 @@ export const cards = [
     'The Internet was Out',
     'My Grandma Died. Again',
     'The Older Kids Took it off me and Tore it Up',
-    'My Mother wanted to Display it on the Fridge',
+    'I was at box practice all night',
     'The Police Confiscated it as Evidence',
     'I was Abducted by Aliens and They took It',
     'I sent it to you in the Post',
-    'My Dad mistook it for a Letter and Posted it to China',
-    'I had to burn it in the Fireplace to keep myself Warm',
+    'I did my homework, but I left it at home',
+    'I had a Headache',
     'It flew out the Window of the Car',
-    'I thought I’d do it Tomorrow because I’ll be Older and Wiser Then',
+    'My mother threw it in the trash',
     'I did my Work. It’s all Up Here in my Head',
-    'I didn’t do it because I didn’t want to add to your Workload',
+    'The homework was far too Easy',
+];
+
+export const winScenarios = [
+    // Row
+    [0, 1, 2, 3, 4],
+    [5, 6, 7, 8, 9],
+    [10, 11, 12, 13, 14],
+    [15, 16, 17, 18, 19],
+    [20, 21, 22, 23, 24],
+    // Column
+    [0, 5, 10, 15, 20],
+    [1, 6, 11, 16, 21],
+    [2, 7, 13, 18, 22],
+    [3, 8, 13, 18, 23],
+    [4, 9, 14, 19, 24],
+    // Diagonal
+    [0, 6, 12, 18, 24],
+    [4, 8, 12, 16, 20],
 ];

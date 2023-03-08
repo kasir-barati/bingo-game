@@ -8,10 +8,12 @@ specifiers:
   '@types/node': ^16.18.14
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
+  nanostores: ^0.7.4
   prettier: ^2.8.4
   react: ^18.2.0
   react-dom: ^18.2.0
   react-scripts: 5.0.1
+  reactjs-popup: ^2.0.5
   typescript: ^4.9.5
   web-vitals: ^2.1.4
 
@@ -23,9 +25,11 @@ dependencies:
   '@types/node': 16.18.14
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
+  nanostores: 0.7.4
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scripts: 5.0.1_j5ip3o3v6sktjzl5cxtjyfbuo4
+  reactjs-popup: 2.0.5_biqbaboplfbrettd7655fr4n2y
   typescript: 4.9.5
   web-vitals: 2.1.4
 
@@ -6845,6 +6849,11 @@ packages:
     hasBin: true
     dev: false
 
+  /nanostores/0.7.4:
+    resolution: {integrity: sha512-MBeUVt7NBcXqh7AGT+KSr3O0X/995CZsvcP2QEMP+PXFwb07qv3Vjyq+EX0yS8f12Vv3Tn2g/BvK/OZoMhJlOQ==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    dev: false
+
   /natural-compare-lite/1.4.0:
     resolution: {integrity: sha512-Tj+HTDSJJKaZnfiuw+iaF9skdPpTo2GtEly5JHnWV/hfv2Qj/9RKsGISQtLh2ox3l5EAGw487hnBee0sIJ6v2g==}
     dev: false
@@ -8330,6 +8339,17 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+    dev: false
+
+  /reactjs-popup/2.0.5_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-b5hv9a6aGsHEHXFAgPO5s1Jw1eSkopueyUVxQewGdLgqk2eW0IVXZrPRpHR629YcgIpC2oxtX8OOZ8a7bQJbxA==}
+    engines: {node: '>=10'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /read-cache/1.0.0:
