@@ -8,10 +8,12 @@ env:
   NODE_VERSION: 19.7.0
 
 jobs:
-  deploy-github-pages:
+  deploy:
     runs-on: ubuntu-22.04
     permissions:
       contents: write
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
 
     steps:
       - name: Checkout
