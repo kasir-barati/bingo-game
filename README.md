@@ -41,6 +41,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### [GitHub pages](https://github.com/keithweaver/react-gh-pages)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### [Auto deploy GitHub pages](https://keithweaver.ca/lessons/deploy-react-gh-pages-using-github-actions)
+
+### [How to work with pnpm in GitHub actions](https://github.com/pnpm/action-setup)
