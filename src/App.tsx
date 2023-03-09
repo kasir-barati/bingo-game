@@ -1,4 +1,3 @@
-import { PropsWithChildren } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
@@ -76,10 +75,3 @@ function App() {
 }
 
 export default App;
-
-function Exclude({
-    condition,
-    children,
-}: PropsWithChildren<{ condition: boolean }>) {
-    return condition ? <></> : <>{children}</>;
-}
