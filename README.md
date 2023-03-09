@@ -46,3 +46,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ### [Auto deploy GitHub pages](https://keithweaver.ca/lessons/deploy-react-gh-pages-using-github-actions)
 
 ### [How to work with pnpm in GitHub actions](https://github.com/pnpm/action-setup)
+
+### [How to generate SSH keys once and use them as your way of deploying](https://github.com/peaceiris/actions-gh-pages)
