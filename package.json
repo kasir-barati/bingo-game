@@ -1,4 +1,5 @@
 {
+    "homepage": "http://kasir-barati.github.io/bingo-game",
     "name": "bingo-game",
     "version": "0.1.0",
     "engines": {
@@ -26,7 +27,9 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!nanostores)/\" --env=jsdom",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": [
@@ -46,6 +49,7 @@
         ]
     },
     "devDependencies": {
+        "gh-pages": "^5.0.0",
         "prettier": "^2.8.4"
     }
 }
