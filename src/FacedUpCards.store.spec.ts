@@ -1,4 +1,9 @@
-import { allTasks, cleanStores, keepMount } from 'nanostores';
+import {
+    allTasks,
+    cleanStores,
+    keepMount,
+    WritableAtom,
+} from 'nanostores';
 import { FaceUpCardsStore } from './FacedUpCards.store';
 
 describe('FaceUpCardsStore', () => {
@@ -6,6 +11,10 @@ describe('FaceUpCardsStore', () => {
 
     afterEach(async () => {
         cleanStores(states.bingo, states.facedUpCards);
+        (states.bingo as WritableAtom<boolean | undefined>).set(
+            undefined,
+        );
+        (states.facedUpCards as WritableAtom<number[]>).set([]);
     });
 
     describe('addNewCardNumber', () => {
@@ -20,7 +29,6 @@ describe('FaceUpCardsStore', () => {
 
     describe('removeCardNumber', () => {
         it('should remove 1 from the faced up cards', async () => {
-            console.log('HI');
             keepMount(states.facedUpCards);
             actions.addNewCardNumber(1);
             actions.removeCardNumber(1);

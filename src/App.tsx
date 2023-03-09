@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react';
-import Popup from 'reactjs-popup';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import { cards } from './cards';
 import { FaceUpCardsStore } from './FacedUpCards.store';
@@ -30,7 +31,19 @@ function App() {
                                 actions.updateBingo(
                                     facedUpCards.get(),
                                 );
-                                console.log(bingo.get());
+                                if (bingo.get()) {
+                                    toast(
+                                        <>
+                                            <img
+                                                src="firework.gif"
+                                                style={{
+                                                    width: '100%',
+                                                    height: '100%',
+                                                }}
+                                            />
+                                        </>,
+                                    );
+                                }
                             }}
                             id={`cardNumber${index}`}
                         />
@@ -46,9 +59,18 @@ function App() {
                     </div>
                 ))}
             </div>
-            <Popup open={bingo.get()} position="right center">
-                <div>Popup content here !!</div>
-            </Popup>
+            <ToastContainer
+                position="bottom-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
         </div>
     );
 }
